@@ -6,13 +6,12 @@ A modern, responsive portfolio website template ready for customization.
 
 ## 🌐 Live Demo
 
+## 🌐 Live Demo
+
 [![Live Demo Preview](https://img.shields.io/badge/Live_Demo-Visit_Site-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://ragstarg.github.io/Client-s-Portfolio-Website/)
 
-[![Website Preview](assets/preview.png)](https://ragstarg.github.io/Client-s-Portfolio-Website/)
-
-> 👆 **Click the image or badge above to test the live interactive site!**  
+> 👆 **Click the badge above to open the live website!**  
 > Direct Link: [https://ragstarg.github.io/Client-s-Portfolio-Website/](https://ragstarg.github.io/Client-s-Portfolio-Website/)
-
 ---
 
 ## 🚀 Quick Start
