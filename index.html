@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Aditya Tiwari — Portfolio.exe</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section id="intro">
+
+    <div class="intro-top">
+        <span>ADITYA.exe</span>
+        <span id="systemStatus">LOADING VIDEO...</span>
+    </div>
+
+    <div class="intro-video-container">
+
+        <video
+            id="introVideo"
+            class="intro-video"
+            autoplay
+            muted
+            playsinline
+            preload="auto"
+            poster="assets/spider-poster.jpg"
+        >
+            <source src="assets/Spider_man_edit.mp4" type="video/mp4">
+        </video>
+
+        <!-- Fallback if video cannot load -->
+        <div id="videoFallback">
+
+            <div class="fallback-title">
+                VIDEO.EXE
+            </div>
+
+            <div class="fallback-text">
+                VIDEO FILE NOT FOUND
+            </div>
+
+            <div class="fallback-path">
+                ./assets/Spider_man_edit.mp4
+            </div>
+
+        </div>
+
+        <div class="intro-overlay"></div>
+
+    </div>
+
+    <div class="intro-warning">
+
+        <span>PLEASE WAIT.</span>
+
+        <br>
+
+        THIS PORTFOLIO HAS
+        <strong>NO SUPERVISION.</strong>
+
+    </div>
+
+    <button id="skipIntro" class="skip-button">
+        SKIP →
+    </button>
+
+    <div class="intro-progress">
+        <div id="introProgress"></div>
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SCREEN BREAK
+===================================================== -->
+
+<div id="screenBreak">
+
+    <div class="crack crack1"></div>
+    <div class="crack crack2"></div>
+    <div class="crack crack3"></div>
+    <div class="crack crack4"></div>
+
+    <div class="boom">
+        BOOM!
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     WEBSITE
+===================================================== -->
+
+<div id="app">
+
+    <!-- CARTOON PIGEON DELIVERY -->
+    <div id="pigeon" aria-hidden="true">
+        <div class="pigeon-flight-wrap">
+            <svg class="pigeon-svg" viewBox="0 0 430 280" aria-hidden="true">
+                <defs>
+                    <linearGradient id="birdBody" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#f7f8fb"/>
+                        <stop offset=".55" stop-color="#cbd2dc"/>
+                        <stop offset="1" stop-color="#7e8999"/>
+                    </linearGradient>
+                    <linearGradient id="birdWing" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#e9edf4"/>
+                        <stop offset=".45" stop-color="#a9b3c2"/>
+                        <stop offset="1" stop-color="#596577"/>
+                    </linearGradient>
+                    <linearGradient id="birdHead" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#aeb9c8"/>
+                        <stop offset="1" stop-color="#536173"/>
+                    </linearGradient>
+                    <linearGradient id="neckColor" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#23d7c2"/>
+                        <stop offset=".52" stop-color="#23cbb4"/>
+                        <stop offset="1" stop-color="#ee5ca8"/>
+                    </linearGradient>
+                    <filter id="birdShadow" x="-30%" y="-35%" width="170%" height="190%">
+                        <feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#162033" flood-opacity=".25"/>
+                    </filter>
+                </defs>
+
+                <g class="pigeon-art" filter="url(#birdShadow)">
+                    <!-- rear wing -->
+                    <g class="pigeon-wing pigeon-wing-back">
+                        <path d="M188 128 C170 75 135 31 91 38 C117 57 132 78 141 105 C111 83 77 80 52 97 C76 137 123 161 170 154 C190 151 200 141 188 128Z" fill="url(#birdWing)" stroke="#364255" stroke-width="4"/>
+                        <path d="M94 51 C120 67 139 91 162 124" fill="none" stroke="#69778b" stroke-width="7" stroke-linecap="round"/>
+                        <path d="M73 78 C106 91 127 112 151 139" fill="none" stroke="#718096" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M61 101 C90 111 111 127 137 146" fill="none" stroke="#657286" stroke-width="5" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- tail -->
+                    <g class="pigeon-tail">
+                        <path d="M104 155 L30 124 L56 151 L27 176 L116 173Z" fill="#4d596d" stroke="#354052" stroke-width="4"/>
+                        <path d="M97 160 L39 145 L66 165 L43 183 L116 171Z" fill="#758296"/>
+                        <path d="M91 163 L52 159 L76 173" fill="none" stroke="#aeb8c7" stroke-width="4"/>
+                    </g>
+
+                    <!-- body -->
+                    <ellipse cx="173" cy="153" rx="91" ry="56" fill="url(#birdBody)" stroke="#364255" stroke-width="4" transform="rotate(-8 173 153)"/>
+                    <ellipse cx="144" cy="137" rx="53" ry="29" fill="#ffffff" opacity=".30" transform="rotate(-10 144 137)"/>
+
+                    <!-- colorful neck -->
+                    <path d="M211 113 C226 87 258 82 281 101 C299 117 296 151 273 165 C250 177 220 159 208 138Z" fill="url(#neckColor)" stroke="#364255" stroke-width="4"/>
+
+                    <!-- head -->
+                    <ellipse cx="274" cy="92" rx="45" ry="43" fill="url(#birdHead)" stroke="#364255" stroke-width="4"/>
+
+                    <!-- goggles -->
+                    <g class="pigeon-goggles">
+                        <rect x="252" y="64" width="31" height="20" rx="8" fill="#3d4655" stroke="#1f2631" stroke-width="4"/>
+                        <rect x="286" y="64" width="31" height="20" rx="8" fill="#3d4655" stroke="#1f2631" stroke-width="4"/>
+                        <path d="M282 72 L287 72" stroke="#1f2631" stroke-width="5" stroke-linecap="round"/>
+                        <circle cx="267" cy="74" r="6" fill="#9eeaff" opacity=".9"/>
+                        <circle cx="301" cy="74" r="6" fill="#9eeaff" opacity=".9"/>
+                        <path d="M251 63 C247 58 242 59 239 63" fill="none" stroke="#263041" stroke-width="4" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- eye -->
+                    <circle cx="286" cy="96" r="9" fill="#171c25"/>
+                    <circle cx="289" cy="93" r="3.5" fill="#fff"/>
+
+                    <!-- beak -->
+                    <path d="M309 101 L356 113 L311 126 L296 114Z" fill="#e99b4f" stroke="#364255" stroke-width="4"/>
+                    <path d="M310 114 L347 115" stroke="#9a5d31" stroke-width="3" stroke-linecap="round"/>
+
+                    <!-- front wing -->
+                    <g class="pigeon-wing pigeon-wing-front">
+                        <path d="M216 137 C199 82 160 49 119 60 C144 73 162 96 171 121 C140 101 108 101 81 121 C111 159 160 181 207 170 C228 165 230 149 216 137Z" fill="url(#birdWing)" stroke="#364255" stroke-width="4"/>
+                        <path d="M125 71 C151 83 171 105 196 136" fill="none" stroke="#718096" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M103 98 C133 108 157 126 185 152" fill="none" stroke="#68758a" stroke-width="7" stroke-linecap="round"/>
+                        <path d="M91 119 C119 127 143 143 169 161" fill="none" stroke="#5c697d" stroke-width="6" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- feet -->
+                    <g class="pigeon-feet">
+                        <path d="M177 194 C175 208 173 218 166 226 M204 189 C205 202 207 213 202 221" fill="none" stroke="#e89445" stroke-width="7" stroke-linecap="round"/>
+                        <path d="M159 226 L177 226 M194 221 L212 221" fill="none" stroke="#a65e2f" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M164 226 L160 232 M171 226 L169 233 M199 221 L196 227 M207 221 L208 228" fill="none" stroke="#a65e2f" stroke-width="3" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- delivery string -->
+                    <path class="pigeon-string" d="M176 208 C177 218 183 225 190 231" fill="none" stroke="#4a4b52" stroke-width="3"/>
+
+                    <!-- envelope -->
+                    <g class="pigeon-letter">
+                        <rect x="170" y="224" width="76" height="48" rx="4" fill="#fffdf4" stroke="#283142" stroke-width="4"/>
+                        <path d="M172 226 L208 251 L244 226" fill="none" stroke="#c6bda9" stroke-width="3"/>
+                        <path d="M173 270 L199 246 M243 270 L217 246" fill="none" stroke="#d2c8b2" stroke-width="3"/>
+                        <path d="M208 247 C202 239 191 246 208 259 C225 246 214 239 208 247Z" fill="#ff4c72" stroke="#b8294b" stroke-width="2"/>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- FAST PIGEON FLOCK -->
+    <div id="pigeonFlock" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a
+            href="#home"
+            class="brand"
+        >
+
+            <span class="brand-icon">
+                AT
+            </span>
+
+            <span>
+                ADITYA.exe
+            </span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#experience">LORE</a>
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+
+        <button
+            id="chaosButton"
+            class="nav-chaos"
+        >
+            CHAOS
+        </button>
+
+    </header>
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <div class="hero-bg-circle circle-a"></div>
+        <div class="hero-bg-circle circle-b"></div>
+        <div class="hero-bg-circle circle-c"></div>
+
+
+        <div class="hero-content">
+
+            <div class="label">
+                COMPUTER SCIENCE • AI • SECURITY
+            </div>
+
+
+            <h1>
+
+                I'M
+                <span>ADITYA</span>
+
+                <br>
+
+                <strong>TIWARI.</strong>
+
+            </h1>
+
+
+            <div class="typing-line">
+
+                <span id="typingText"></span>
+
+                <span class="typing-cursor">
+                    _
+                </span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Computer Science undergraduate building across
+                software engineering, backend systems,
+                cybersecurity, AI/ML and digital forensics.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="#projects"
+                    class="button button-red"
+                >
+                    SEE THE DAMAGE →
+                </a>
+
+                <a
+                    href="#contact"
+                    class="button button-cyan"
+                >
+                    SUMMON THE PIGEON
+                </a>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>05+</strong>
+                    <span>Major Projects</span>
+                </div>
+
+                <div>
+                    <strong>∞</strong>
+                    <span>Ideas</span>
+                </div>
+
+                <div>
+                    <strong>01</strong>
+                    <span>Brain</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO -->
+
+        <div class="hero-photo-area">
+
+            <div class="sticker sticker-yellow">
+                HELLO 👋
+            </div>
+
+            <div class="photo-card">
+
+                <div class="photo-top">
+                    <span>ADITYA.jpg</span>
+                    <span>OPEN</span>
+                </div>
+
+                <img
+                    src="assets/aditya.jpg"
+                    alt="Aditya Tiwari"
+                    onerror="this.src='https://placehold.co/700x900/111/fff?text=PROFILE.jpg'"
+                >
+
+                <div class="photo-info">
+
+                    <strong>
+                        ADITYA TIWARI
+                    </strong>
+
+                    <span>
+                        probably debugging something
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="sticker sticker-green">
+                IT WORKS!
+            </div>
+
+            <div class="sticker sticker-red">
+                404
+                <br>
+                CALM NOT FOUND
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         MARQUEE
+    ================================================== -->
+
+    <div class="marquee">
+
+        <div class="marquee-track">
+
+            <span>
+                IT'S NOT A BUG
+            </span>
+
+            <b>✦</b>
+
+            <span>
+                IT'S A FEATURE
+            </span>
+
+            <b>✦</b>
+
+            <span>
+                npm install && pray
+            </span>
+
+            <b>✦</b>
+
+            <span>
+                ONE MORE FUNCTION
+            </span>
+
+            <b>✦</b>
+
+            <span>
+                IT WORKED ON MY MACHINE
+            </span>
+
+            <b>✦</b>
+
+            <span>
+                DEPLOY AND HOPE
+            </span>
+
+            <b>✦</b>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         ABOUT
+    ================================================== -->
+
+    <section
+        id="about"
+        class="section about"
+    >
+
+        <div class="section-label">
+            01 / WHO IS THIS GUY?
+        </div>
+
+
+        <div class="about-grid">
+
+            <div>
+
+                <h2 class="huge-title">
+
+                    PROFESSIONAL
+                    <span>NERD.</span>
+
+                </h2>
+
+                <div class="big-emoji">
+                    🧑‍💻
+                </div>
+
+            </div>
+
+
+            <div class="about-text">
+
+                <p class="large">
+
+                    Aditya is a Computer Science undergraduate
+                    who enjoys turning open-ended problems into
+                    working systems.
+
+                </p>
+
+                <p>
+
+                    His work spans software engineering,
+                    backend systems, cybersecurity, AI/ML,
+                    digital forensics and computer vision.
+
+                </p>
+
+
+                <div class="quote">
+
+                    <span class="quote-symbol">
+                        "
+                    </span>
+
+                    <strong>
+                        Why learn a technology
+                        without building something
+                        ridiculous with it?
+                    </strong>
+
+                    <small>
+                        — probably Aditya at 2:00 AM
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SKILLS
+    ================================================== -->
+
+    <section
+        id="skills"
+        class="section skills"
+    >
+
+        <div class="section-label">
+            02 / TOOLBOX
+        </div>
+
+        <h2 class="section-heading">
+            THINGS I
+            <span>KNOW.</span>
+        </h2>
+
+
+        <div class="skills-grid">
+
+            <article class="skill-card red">
+                <span>01</span>
+                <h3>LANGUAGES</h3>
+                <p>
+                    Python · Java · C · C++ · JavaScript ·
+                    TypeScript · SQL · Bash
+                </p>
+            </article>
+
+
+            <article class="skill-card blue">
+                <span>02</span>
+                <h3>WEB & BACKEND</h3>
+                <p>
+                    FastAPI · Flask · Django · React · Vite ·
+                    Node.js · Express · REST APIs
+                </p>
+            </article>
+
+
+            <article class="skill-card yellow">
+                <span>03</span>
+                <h3>AI / ML</h3>
+                <p>
+                    scikit-learn · NumPy · Pandas · OpenCV ·
+                    MediaPipe · LLM APIs · RAG
+                </p>
+            </article>
+
+
+            <article class="skill-card green">
+                <span>04</span>
+                <h3>SECURITY</h3>
+                <p>
+                    OWASP · JWT · CORS · Authentication ·
+                    Session Security · Vulnerability Assessment
+                </p>
+            </article>
+
+
+            <article class="skill-card purple">
+                <span>05</span>
+                <h3>INFRASTRUCTURE</h3>
+                <p>
+                    PostgreSQL · MySQL · SQLite · Redis ·
+                    MinIO · Docker · SQLAlchemy
+                </p>
+            </article>
+
+
+            <article class="skill-card orange">
+                <span>06</span>
+                <h3>TOOLS</h3>
+                <p>
+                    Git · GitHub · Linux · VS Code ·
+                    Docker Compose
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PROJECTS
+    ================================================== -->
+
+    <section
+        id="projects"
+        class="section projects"
+    >
+
+        <div class="section-label">
+            03 / THE DAMAGE
+        </div>
+
+
+        <div class="projects-heading">
+
+            <div>
+
+                <h2 class="section-heading">
+                    PROJECTS
+                    <span>IRL.</span>
+                </h2>
+
+                <p>
+                    Don't just look at the cards.
+                    Interact with them.
+                </p>
+
+            </div>
+
+            <div class="live-status">
+                <i></i>
+                SYSTEMS ONLINE
+            </div>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- BLACKBOX -->
+
+            <article
+                class="project-card blackbox"
+                data-project="blackbox"
+            >
+
+                <div class="project-header">
+
+                    <span>
+                        01
+                    </span>
+
+                    <small>
+                        ● ONLINE
+                    </small>
+
+                </div>
+
+
+                <div class="terminal">
+
+                    <div class="terminal-head">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <label>
+                            blackbox@forensics
+                        </label>
+
+                    </div>
+
+
+                    <div class="terminal-body">
+
+                        <p>
+                            $ ./blackbox --scan evidence
+                        </p>
+
+                        <p class="green">
+                            [OK] Evidence ingestion
+                        </p>
+
+                        <p class="cyan">
+                            [OK] OCR enrichment
+                        </p>
+
+                        <p class="yellow">
+                            [OK] Entity extraction
+                        </p>
+
+                        <p class="pink">
+                            [OK] Relationship discovery
+                        </p>
+
+                        <div class="progress">
+                            <i></i>
+                        </div>
+
+                        <strong>
+                            PIPELINE READY
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    BLACKBOX
+                </h3>
+
+                <p>
+                    Digital Forensics & Investigative
+                    Intelligence Platform.
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>PostgreSQL</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>React</span>
+
+                </div>
+
+
+                <button class="project-button">
+                    OPEN LIVE VIEW →
+                </button>
+
+            </article>
+
+
+            <!-- AUTHSHEILD -->
+
+            <article
+                class="project-card authshield"
+                data-project="authshield"
+            >
+
+                <div class="project-header">
+
+                    <span>
+                        02
+                    </span>
+
+                    <small>
+                        ● AUDITING
+                    </small>
+
+                </div>
+
+
+                <div class="security-demo">
+
+                    <div class="shield">
+                        🛡️
+                    </div>
+
+                    <div class="scan"></div>
+
+                    <div class="security-row">
+                        <span>
+                            Authentication
+                        </span>
+
+                        <b>
+                            PASS
+                        </b>
+                    </div>
+
+                    <div class="security-row">
+                        <span>
+                            Rate Limiting
+                        </span>
+
+                        <b>
+                            PASS
+                        </b>
+                    </div>
+
+                    <div class="security-row">
+                        <span>
+                            CORS
+                        </span>
+
+                        <b>
+                            PASS
+                        </b>
+                    </div>
+
+                    <div class="security-row">
+                        <span>
+                            JWT
+                        </span>
+
+                        <b>
+                            PASS
+                        </b>
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    AUTHSHEILD
+                </h3>
+
+                <p>
+                    Passive-first web authentication
+                    security auditor.
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>HTTPX</span>
+                    <span>Pydantic</span>
+                    <span>pytest</span>
+
+                </div>
+
+
+                <button class="project-button">
+                    RUN SECURITY DEMO →
+                </button>
+
+            </article>
+
+
+            <!-- SERPICO -->
+
+            <article
+                class="project-card serpico"
+                data-project="serpico"
+            >
+
+                <div class="project-header">
+
+                    <span>
+                        03
+                    </span>
+
+                    <small>
+                        ● INVESTIGATION
+                    </small>
+
+                </div>
+
+
+                <div class="network">
+
+                    <div class="network-node node1">
+                        CASE
+                    </div>
+
+                    <div class="network-node node2">
+                        DATA
+                    </div>
+
+                    <div class="network-node node3">
+                        ENTITY
+                    </div>
+
+                    <div class="network-node node4">
+                        EVENT
+                    </div>
+
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+
+                </div>
+
+
+                <h3>
+                    SERPICO
+                </h3>
+
+                <p>
+                    Security and investigation platform
+                    for structured analysis.
+                </p>
+
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>Security</span>
+                    <span>Web</span>
+
+                </div>
+
+
+                <button class="project-button">
+                    ENTER INVESTIGATION →
+                </button>
+
+            </article>
+
+
+            <!-- SENTINEL -->
+
+            <article
+                class="project-card sentinel"
+                data-project="sentinel"
+            >
+
+                <div class="project-header">
+
+                    <span>
+                        04
+                    </span>
+
+                    <small>
+                        ● AI ONLINE
+                    </small>
+
+                </div>
+
+
+                <div class="chat-demo">
+
+                    <div class="message ai">
+                        <b>AI</b>
+                        Tell me about your biggest failure.
+                    </div>
+
+                    <div class="message user">
+                        <b>YOU</b>
+                        I have a strategy.
+                    </div>
+
+                    <div class="message ai">
+                        <b>AI</b>
+                        That's what everyone says.
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    SENTINEL
+                </h3>
+
+                <p>
+                    Adversarial AI workplace simulation
+                    with adaptive scenarios.
+                </p>
+
+
+                <div class="tags">
+
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>Flask</span>
+                    <span>Groq</span>
+                    <span>Llama</span>
+
+                </div>
+
+
+                <button class="project-button">
+                    TALK TO SENTINEL →
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         EXPERIENCE
+    ================================================== -->
+
+    <section
+        id="experience"
+        class="section experience"
+    >
+
+        <div class="section-label">
+            04 / LORE
+        </div>
+
+        <h2 class="section-heading">
+            CHARACTER
+            <span>DEVELOPMENT.</span>
+        </h2>
+
+
+        <div class="timeline">
+
+            <article>
+
+                <div class="timeline-dot"></div>
+
+                <small>
+                    SEP 2026
+                </small>
+
+                <div class="timeline-box">
+
+                    <h3>
+                        AIG — Shields Up
+                    </h3>
+
+                    <h4>
+                        Cybersecurity Virtual Experience
+                    </h4>
+
+                    <p>
+                        Analysed Apache Log4j / Log4Shell using
+                        CISA and NVD advisories and worked through
+                        exploitation risk, remediation and
+                        verification.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article>
+
+                <div class="timeline-dot"></div>
+
+                <small>
+                    2026
+                </small>
+
+                <div class="timeline-box">
+
+                    <h3>
+                        Quantum ML Research
+                    </h3>
+
+                    <h4>
+                        Co-authored Research Paper
+                    </h4>
+
+                    <p>
+                        Research covering quantum data encoding,
+                        feature maps, variational quantum circuits,
+                        quantum kernels and classifiers.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article>
+
+                <div class="timeline-dot"></div>
+
+                <small>
+                    2026
+                </small>
+
+                <div class="timeline-box">
+
+                    <h3>
+                        Competitions & Recognition
+                    </h3>
+
+                    <h4>
+                        AWS · ISRO · NASSCOM · SIH
+                    </h4>
+
+                    <p>
+                        Bharat Builds Tour, NASSCOM FutureSkills
+                        Prime, ISRO Bharatiya Antariksh Hackathon
+                        and Smart India Hackathon.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         MEME SECTION
+    ================================================== -->
+
+    <section class="memes">
+
+        <div class="section-label">
+            05 / EXTREMELY IMPORTANT RESEARCH
+        </div>
+
+        <h2 class="section-heading">
+            MEME
+            <span>SCIENCE.</span>
+        </h2>
+
+
+        <div class="meme-grid">
+
+            <article class="meme meme1">
+
+                <div>🕷️</div>
+
+                <h3>
+                    WHEN IT WORKS
+                    FIRST TRY
+                </h3>
+
+                <p>
+                    Don't question it.
+                    Commit immediately.
+                </p>
+
+            </article>
+
+
+            <article class="meme meme2">
+
+                <div>☕</div>
+
+                <h3>
+                    ONE MORE
+                    FUNCTION
+                </h3>
+
+                <p>
+                    It is now 4:17 AM.
+                </p>
+
+            </article>
+
+
+            <article class="meme meme3">
+
+                <div>🐛</div>
+
+                <h3>
+                    FIXED ONE BUG
+                </h3>
+
+                <p>
+                    Created seven more.
+                </p>
+
+            </article>
+
+
+            <article class="meme meme4">
+
+                <div>🤡</div>
+
+                <h3>
+                    IT WORKED
+                    LOCALLY
+                </h3>
+
+                <p>
+                    Deployment has entered
+                    the chat.
+                </p>
+
+            </article>
+
+
+            <article class="meme meme5">
+
+                <div>💻</div>
+
+                <h3>
+                    STACK OVERFLOW
+                </h3>
+
+                <p>
+                    Senior developer
+                    since forever.
+                </p>
+
+            </article>
+
+
+            <article class="meme meme6">
+
+                <div>🧠</div>
+
+                <h3>
+                    DEBUGGING
+                </h3>
+
+                <p>
+                    Have you tried
+                    staring at it harder?
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+    <section
+        id="contact"
+        class="contact"
+    >
+
+        <div class="contact-bg">
+            HELLO?
+        </div>
+
+        <div class="section-label">
+            06 / SEND THE PIGEON
+        </div>
+
+
+        <h2>
+            HAVE A
+            <span>PROJECT?</span>
+        </h2>
+
+
+        <p>
+            Need someone who can build things,
+            break things and then somehow make
+            them work again?
+        </p>
+
+
+        <div class="mail-card">
+
+            <div class="mail-top">
+
+                <span>
+                    MESSAGE.exe
+                </span>
+
+                <span>
+                    ● READY
+                </span>
+
+            </div>
+
+
+            <div class="email">
+                aditya0850@proton.me
+            </div>
+
+
+            <button id="sendMail">
+
+                <span class="mail-icon">
+                    ✉️
+                </span>
+
+                <strong>
+                    SEND MAIL
+                </strong>
+
+                <small>
+                    A pigeon will personally deliver this.
+                </small>
+
+            </button>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/Aditya0850"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GITHUB ↗
+            </a>
+
+            <a
+                href="https://linkedin.com/in/aditya0850"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LINKEDIN ↗
+            </a>
+
+            <a
+                href="mailto:aditya0850@proton.me"
+            >
+                EMAIL ↗
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <span>
+            ADITYA.exe © 2026
+        </span>
+
+        <span>
+            MADE WITH CODE & QUESTIONABLE DECISIONS
+        </span>
+
+        <button id="panicButton">
+            🚨 PANIC
+        </button>
+
+    </footer>
+
+</div>
+
+
+<!-- =====================================================
+     PROJECT MODAL
+===================================================== -->
+
+<div id="projectModal">
+
+    <div class="modal">
+
+        <button id="closeModal">
+            ×
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
